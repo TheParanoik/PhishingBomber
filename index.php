@@ -7,5 +7,6 @@
       <input type="text" name="password-field">
       <input type="number" name="rounds">
       <input type="submit" value="execute">
+    </form>
   </body>
 </html>
