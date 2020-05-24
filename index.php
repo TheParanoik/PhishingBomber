@@ -1,5 +1,8 @@
 <html>
-  <head></head>
+  <head>
+    <title>Phishing Spammer</title>
+    
+  </head>
   <body>
     <form method="post" action="backend.php">
       <input type="url" name="target">
