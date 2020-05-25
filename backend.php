@@ -14,11 +14,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   $round = 1
   while($round <= $rounds){
 
-    $login = $credentials['username'][rand(0,count($credentials['username']))].rand(0,9).rand(0,9)."@".$credentials['domain'][rand(0,count($credentials['domain']))];
-    $password = $credentials['password'][rand(0,count($credentials['password']))].rand(1,999);
+    $login = $credentials['username'][rand(0,count($credentials['username']))].rand(3,999)."@".$credentials['domain'][rand(0,count($credentials['domain']))];
+    $password = $credentials['password'][rand(0,count($credentials['password']))];
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,$target);
-  curl_setopt($ch, CURLOPT_PROXY, $proxy[$round]);
+  curl_setopt($ch, CURLOPT_PROXY, $proxy[rand(0,count($proxy))]);
 
   curl_setopt($ch,CURLOPT_POST, "$loginField=$login&$passwordField=$password");
 
