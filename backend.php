@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   $rounds = $_POST['rounds'];
   $credentials = json_decode(get_file_content("credentials.json"));
 
-  if(!is_int($rounds)){
+  if(!is_int($rounds) || $rounds == 0){
     $rounds = 10;
   }
 
