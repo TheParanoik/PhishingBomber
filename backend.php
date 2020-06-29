@@ -14,6 +14,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
   $round = 1
   while($round <= $rounds){
 
+    sleep(rand(500,3000));
+
     $login = $credentials['username'][rand(0,count($credentials['username']))].rand(3,999)."@".$credentials['domain'][rand(0,count($credentials['domain']))];
     $password = $credentials['password'][rand(0,count($credentials['password']))];
   $ch = curl_init();
