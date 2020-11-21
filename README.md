@@ -14,6 +14,7 @@ Upload the repo code to online host supporting PHP and curl.
 You can config Phishing Bomber with JSON files (credentials.json and proxy.json).
 
 ## Usage
+*full docs soon*
 
 
 Special greetings to [Engineer Man](https://github.com/engineer-man) for the idea: [Video](https://www.youtube.com/watch?v=UtNYzv8gLbs)
